@@ -1,5 +1,6 @@
 package gitChecker;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -16,6 +17,11 @@ public class Checker {
 		// Driver actions
 		
 		driver.get("https://github.com");
+		
+		Credentials credentials = new Credentials();
+		
+		driver.findElement(By.xpath("/html/body/div[1]/header/div/div[2]/div[2]/a[1]")).click();
+		
 
 	}
 
