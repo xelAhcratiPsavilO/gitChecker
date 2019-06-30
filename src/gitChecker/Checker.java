@@ -21,6 +21,7 @@ public class Checker {
 		Credentials credentials = new Credentials();
 		
 		driver.findElement(By.xpath("/html/body/div[1]/header/div/div[2]/div[2]/a[1]")).click();
+		driver.findElement(By.id("login_field")).sendKeys(credentials.USERNAME);
 		
 
 	}
