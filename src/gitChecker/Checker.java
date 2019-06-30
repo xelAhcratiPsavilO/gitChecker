@@ -25,6 +25,7 @@ public class Checker {
 		driver.findElement(By.id("password")).sendKeys(credentials.PASSWORD);
 		driver.findElement(By.xpath("//*[@id=\"login\"]/form/div[3]/input[4]")).click();
 		driver.findElement(By.xpath("/html/body/div[1]/header/div[8]/details/summary/img")).click();
+		driver.findElement(By.xpath("/html/body/div[1]/header/div[8]/details/details-menu/a[2]")).click();
 
 	}
 
